@@ -21,7 +21,7 @@ spec:
       containers:
       - name: frontend
 
-        image: yourdockerhubusername/devops-practice-frontend:v1
+        image: sanketf5/devops-practice-frontend:v1
 
         ports:
         - containerPort: 5173
