@@ -1,0 +1,23 @@
+apiVersion:
+kind: Deployment
+metadata:
+  name: frontend-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: frontend 
+  template:
+    metadata:
+      labels:
+        app: frontend
+    spec: 
+      containers:
+      - name: frontend
+        image:  sanketf5/devops-practice-frontend:v1
+        ports:
+        - containerPort: 5173
+
+
+
+
