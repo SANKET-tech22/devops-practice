@@ -1,23 +1,27 @@
 apiVersion: apps/v1
+
 kind: Deployment
+
 metadata:
   name: frontend-deployment
+
 spec:
   replicas: 2
+
   selector:
     matchLabels:
-      app: frontend 
+      app: frontend
+
   template:
     metadata:
       labels:
         app: frontend
-    spec: 
+
+    spec:
       containers:
       - name: frontend
-        image:  sanketf5/devops-practice-frontend:v1
+
+        image: yourdockerhubusername/devops-practice-frontend:v1
+
         ports:
         - containerPort: 5173
-
-
-
-
