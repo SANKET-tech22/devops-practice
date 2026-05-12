@@ -13,11 +13,10 @@ spec:
         app: backend
     spec:
       containers:
-      - name: backend
-
-      image: sanketf5/devops-practice-backend:v1 
-      ports:
-      - containerPort: 5000
+       - name: backend
+         image: sanketf5/devops-practice-backend:v1 
+         ports:
+          - containerPort: 5000
 
       
           
